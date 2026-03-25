@@ -77,7 +77,7 @@ const About = () => {
         "Our tailored solutions fit your unique business needs, ensuring maximum efficiency.",
     },
     {
-      icon: personicon,
+      icon: customersupport_icon,
       title: "Professional Trade Support",
       description:
         "Experience round-the-clock support for any queries or logistics assistance.",
