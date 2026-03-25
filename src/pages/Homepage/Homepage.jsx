@@ -111,7 +111,7 @@ const slides = [
     { icon: personicon, title: "Strong Sourcing Network", description: "We handle special shipments with expert care and customized logistics solutions." },
     { icon: handshakeicon, title: "Competitive Pricing", description: "Count on us for on-time deliveries that keep your operations running smoothly." },
     { icon: clipboardicon, title: "Timely Deliveries", description: "Our tailored solutions fit your unique business needs, ensuring maximum efficiency." },
-    { icon: personicon, title: "Professional Trade Support", description: "Experience round-the-clock support for any queries or logistics assistance." },
+    { icon: customersupport_icon, title: "Professional Trade Support", description: "Experience round-the-clock support for any queries or logistics assistance." },
     { icon: assurityicon, title: "End-to-End Service", description: "Join hundreds of satisfied clients who trust our reputable and esteemed company." }
   ];
 
