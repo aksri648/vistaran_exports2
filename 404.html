@@ -4,9 +4,8 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      // Support both custom-domain root deploys and github.io project-path deploys.
-      var isGithubIoHost = /\.github\.io$/i.test(window.location.hostname);
-      var pathSegmentsToKeep = isGithubIoHost ? 1 : 0;
+      // Redirect unknown routes to index.html so React Router can handle them.
+      var pathSegmentsToKeep = 1;
       var l = window.location;
       l.replace(
         l.protocol +
