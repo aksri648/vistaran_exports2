@@ -7,17 +7,17 @@
     <script type="text/javascript">
       // Convert redirected GitHub Pages URLs back into proper SPA routes.
       (function () {
-        var redirect = window.location.search;
-        if (redirect.startsWith('?/')) {
-          var decoded = redirect
-            .slice(2)
+        var l = window.location;
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
             .split('&')
             .map(function (segment) {
               return segment.replace(/~and~/g, '&');
             })
             .join('?');
 
-          window.history.replaceState(null, null, window.location.pathname + decoded + window.location.hash);
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
         }
       })();
     </script>
