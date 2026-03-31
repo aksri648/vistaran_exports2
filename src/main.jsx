@@ -4,9 +4,12 @@ import { BrowserRouter } from 'react-router-dom';  // Make sure this import exis
 import App from './App';
 import './index.css';
 
+const isGithubIoHost = /\.github\.io$/i.test(window.location.hostname);
+const basename = isGithubIoHost ? '/vistaran_exports2' : '/';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>  {/* This must wrap App */}
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
